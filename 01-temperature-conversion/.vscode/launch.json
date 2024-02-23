@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:01-temperature-conversion}",
+      "name": "Debug 01-temperature-conversion",
+      "program": "${workspaceFolder:01-temperature-conversion}/.build/debug/01-temperature-conversion",
+      "preLaunchTask": "swift: Build Debug 01-temperature-conversion"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:01-temperature-conversion}",
+      "name": "Release 01-temperature-conversion",
+      "program": "${workspaceFolder:01-temperature-conversion}/.build/release/01-temperature-conversion",
+      "preLaunchTask": "swift: Build Release 01-temperature-conversion"
+    }
+  ]
+}
