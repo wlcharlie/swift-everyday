@@ -39,6 +39,26 @@
       "name": "Release 02-array-and-set (02-array-and-set)",
       "program": "${workspaceFolder:swift-everyday}/02-array-and-set/.build/release/02-array-and-set",
       "preLaunchTask": "swift: Build Release 02-array-and-set (02-array-and-set)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:swift-everyday}/03-loops",
+      "name": "Debug 03-loops (03-loops)",
+      "program": "${workspaceFolder:swift-everyday}/03-loops/.build/debug/03-loops",
+      "preLaunchTask": "swift: Build Debug 03-loops (03-loops)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:swift-everyday}/03-loops",
+      "name": "Release 03-loops (03-loops)",
+      "program": "${workspaceFolder:swift-everyday}/03-loops/.build/release/03-loops",
+      "preLaunchTask": "swift: Build Release 03-loops (03-loops)"
     }
   ]
 }
