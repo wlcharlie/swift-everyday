@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:02-array-and-set}",
+      "name": "Debug 02-array-and-set",
+      "program": "${workspaceFolder:02-array-and-set}/.build/debug/02-array-and-set",
+      "preLaunchTask": "swift: Build Debug 02-array-and-set"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:02-array-and-set}",
+      "name": "Release 02-array-and-set",
+      "program": "${workspaceFolder:02-array-and-set}/.build/release/02-array-and-set",
+      "preLaunchTask": "swift: Build Release 02-array-and-set"
+    }
+  ]
+}
