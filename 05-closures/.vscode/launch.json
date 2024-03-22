@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:05-closures}",
+      "name": "Debug 05-closures",
+      "program": "${workspaceFolder:05-closures}/.build/debug/05-closures",
+      "preLaunchTask": "swift: Build Debug 05-closures"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:05-closures}",
+      "name": "Release 05-closures",
+      "program": "${workspaceFolder:05-closures}/.build/release/05-closures",
+      "preLaunchTask": "swift: Build Release 05-closures"
+    }
+  ]
+}
