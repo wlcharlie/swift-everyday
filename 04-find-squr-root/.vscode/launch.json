@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:04-find-squr-root}",
+      "name": "Debug 04-find-squr-root",
+      "program": "${workspaceFolder:04-find-squr-root}/.build/debug/04-find-squr-root",
+      "preLaunchTask": "swift: Build Debug 04-find-squr-root"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:04-find-squr-root}",
+      "name": "Release 04-find-squr-root",
+      "program": "${workspaceFolder:04-find-squr-root}/.build/release/04-find-squr-root",
+      "preLaunchTask": "swift: Build Release 04-find-squr-root"
+    }
+  ]
+}

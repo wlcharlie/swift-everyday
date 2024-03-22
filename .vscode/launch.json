@@ -59,6 +59,26 @@
       "name": "Release 03-loops (03-loops)",
       "program": "${workspaceFolder:swift-everyday}/03-loops/.build/release/03-loops",
       "preLaunchTask": "swift: Build Release 03-loops (03-loops)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:swift-everyday}/04-find-squr-root",
+      "name": "Debug 04-find-squr-root (04-find-squr-root)",
+      "program": "${workspaceFolder:swift-everyday}/04-find-squr-root/.build/debug/04-find-squr-root",
+      "preLaunchTask": "swift: Build Debug 04-find-squr-root (04-find-squr-root)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:swift-everyday}/04-find-squr-root",
+      "name": "Release 04-find-squr-root (04-find-squr-root)",
+      "program": "${workspaceFolder:swift-everyday}/04-find-squr-root/.build/release/04-find-squr-root",
+      "preLaunchTask": "swift: Build Release 04-find-squr-root (04-find-squr-root)"
     }
   ]
 }
