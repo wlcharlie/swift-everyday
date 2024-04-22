@@ -99,6 +99,26 @@
       "name": "Release 05-closures (05-closures)",
       "program": "${workspaceFolder:swift-everyday}/05-closures/.build/release/05-closures",
       "preLaunchTask": "swift: Build Release 05-closures (05-closures)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:swift-everyday}/06-struct",
+      "name": "Debug 06-struct (06-struct)",
+      "program": "${workspaceFolder:swift-everyday}/06-struct/.build/debug/06-struct",
+      "preLaunchTask": "swift: Build Debug 06-struct (06-struct)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:swift-everyday}/06-struct",
+      "name": "Release 06-struct (06-struct)",
+      "program": "${workspaceFolder:swift-everyday}/06-struct/.build/release/06-struct",
+      "preLaunchTask": "swift: Build Release 06-struct (06-struct)"
     }
   ]
 }

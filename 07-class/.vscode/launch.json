@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:07-class}",
+      "name": "Debug 07-class",
+      "program": "${workspaceFolder:07-class}/.build/debug/07-class",
+      "preLaunchTask": "swift: Build Debug 07-class"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:07-class}",
+      "name": "Release 07-class",
+      "program": "${workspaceFolder:07-class}/.build/release/07-class",
+      "preLaunchTask": "swift: Build Release 07-class"
+    }
+  ]
+}

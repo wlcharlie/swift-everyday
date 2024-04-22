@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:06-struct}",
+      "name": "Debug 06-struct",
+      "program": "${workspaceFolder:06-struct}/.build/debug/06-struct",
+      "preLaunchTask": "swift: Build Debug 06-struct"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:06-struct}",
+      "name": "Release 06-struct",
+      "program": "${workspaceFolder:06-struct}/.build/release/06-struct",
+      "preLaunchTask": "swift: Build Release 06-struct"
+    }
+  ]
+}
