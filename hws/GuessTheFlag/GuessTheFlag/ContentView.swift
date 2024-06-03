@@ -30,6 +30,8 @@ struct ContentView: View {
     @State private var score = 0
     @State private var round = 1
     
+    @State private var chosenFlag: Int? = nil
+    
 //    @State private var isRoundEight = false
 
     
@@ -65,6 +67,9 @@ struct ContentView: View {
                             flagTapped(number)
                         } label: {
                             FlagImage(country: countries[number])
+                                .rotationEffect(.degrees(chosenFlag == number ? 360 : 0))
+                                .offset(y: chosenFlag == number ? -10 : 0)
+                                .opacity(chosenFlag != number && chosenFlag != nil ? 0.25 : 1)
                         }
                     }
                 }
@@ -90,6 +95,13 @@ struct ContentView: View {
     }
     
     func flagTapped(_ number: Int) {
+        withAnimation {
+            chosenFlag = number
+        } completion: {
+            showingScore = true
+        }
+        
+        
         if number == correctAnswer {
             scoreTitle = "Correct"
             score += 1
@@ -97,11 +109,13 @@ struct ContentView: View {
             scoreTitle = "Wrong, that is \(countries[number])"
         }
         
-        showingScore = true
+        
     }
     
     func askQuestion() {
         round += 1
+        
+        chosenFlag = nil
         
 //        if round == 9 {
 //            isRoundEight = true
